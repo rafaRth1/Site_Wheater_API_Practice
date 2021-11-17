@@ -1,0 +1,122 @@
+header {
+  background-color: $azul;
+  height: 8.2rem;
+  box-sizing: border-box;
+}
+
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  padding: 0.5rem;
+}
+
+.logo {
+  a {
+    display: flex;
+    align-items: center;
+
+    img {
+      width: 5rem;
+      height: 5rem;
+    }
+
+    span {
+      color: $white;
+      font-size: 2rem;
+      margin-left: 1rem;
+    }
+  }
+}
+
+.searching_city_postal {
+  position: relative;
+  width: 40rem;
+  margin: 2rem;
+
+  input {
+    font-size: 1.6rem;
+    width: 100%;
+    padding: 1rem 2.5rem 1rem 1rem;
+    border: 0;
+    outline: 0;
+    border-radius: 3rem;
+    text-align: center;
+    background-color: $AzulClaro;
+
+    &:focus {
+      outline: solid $white 0.3rem;
+      text-transform: capitalize;
+    }
+
+    &::placeholder {
+      color: $white;
+    }
+  }
+}
+
+.search-outline {
+  position: absolute;
+  top: 0.4rem;
+  right: 1rem;
+  width: 3rem;
+  height: 3rem;
+  cursor: pointer;
+  color: $white;
+}
+
+.menu {
+  top: 50%;
+  left: 50%;
+  width: 4rem;
+}
+
+.menu:before,
+.menu:after,
+.menu div {
+  background: $white;
+  content: "";
+  display: block;
+  height: 0.4rem;
+  border-radius: 0.3rem;
+  margin: 0.6rem 0;
+  transition: 0.5s;
+}
+
+.menu:hover:before {
+  transform: translateY(1.2rem) rotate(135deg);
+}
+.menu:hover:after {
+  transform: translateY(-1.2rem) rotate(-135deg);
+}
+.menu:hover div {
+  transform: scale(0);
+}
+
+.box {
+  width: 50rem;
+  height: 5rem;
+  background-color: yellow;
+  display: flex;
+
+  .box_1 {
+    background-color: red;
+    width: 5rem;
+    height: 100%;
+    flex: 2 0 0;
+  }
+
+  .box_2 {
+    background-color: green;
+    width: 5rem;
+    height: 100%;
+    flex: 3 0 0;
+  }
+
+  .box_3 {
+    background-color: pink;
+    width: 5rem;
+    height: 100%;
+  }
+}
