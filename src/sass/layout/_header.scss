@@ -47,7 +47,6 @@ header {
 
     &:focus {
       outline: solid $white 0.3rem;
-      text-transform: capitalize;
     }
 
     &::placeholder {
@@ -66,10 +65,9 @@ header {
   color: $white;
 }
 
-.menu {
-  top: 50%;
-  left: 50%;
-  width: 4rem;
+/* .menu {
+  width: 3rem;
+  transition: 0.5s ease-in-out all;
 }
 
 .menu:before,
@@ -78,23 +76,110 @@ header {
   background: $white;
   content: "";
   display: block;
-  height: 0.4rem;
+  height: 0.3rem;
   border-radius: 0.3rem;
   margin: 0.6rem 0;
   transition: 0.5s;
 }
 
 .menu:hover:before {
-  transform: translateY(1.2rem) rotate(135deg);
+  transform: translateY(0.9rem) rotate(135deg);
 }
 .menu:hover:after {
-  transform: translateY(-1.2rem) rotate(-135deg);
+  transform: translateY(-0.9rem) rotate(-135deg);
 }
 .menu:hover div {
   transform: scale(0);
+} */
+
+.site-navigation-links {
+  opacity: 0;
+  transition: 0.2s ease-in-out all;
+  transform: translateY(2rem);
+  pointer-events: none;
+  width: 100%;
+  background-color: $white;
+  box-sizing: border-box;
 }
 
-.box {
+.group-navs {
+  display: flex;
+  justify-content: space-around;
+  background-color: $white;
+  padding: 2.5rem 1rem 1rem 1rem;
+
+  nav {
+    display: flex;
+    flex-direction: column;
+
+    span {
+      font-size: 2rem;
+      color: $black;
+      font-family: $Fira-Sans;
+      font-weight: $Fira-SemiBold;
+      text-transform: uppercase;
+    }
+
+    .items-button {
+      display: flex;
+      flex-direction: column;
+
+      .button-navigation {
+        border: none;
+        background-color: $white;
+        font-size: 1.6rem;
+        text-align: left;
+        padding: 0;
+        margin: 1rem 0;
+        cursor: pointer;
+
+        &:hover {
+          color: darkblue;
+        }
+      }
+    }
+  }
+}
+
+.menu-activador {
+  width: 30px;
+  height: 20px;
+
+  a {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    &.menu-abierto .menu-activador-linea {
+      &:nth-child(1) {
+        transform: translateY(9px) rotate(45deg);
+      }
+      &:nth-child(2) {
+        opacity: 0;
+      }
+      &:nth-child(3) {
+        transform: translateY(-9px) rotate(-45deg);
+      }
+    }
+  }
+  .menu-activador-linea {
+    height: 2px;
+    background-color: #fff;
+    opacity: 1;
+    transform: translateY(0) rotate(0);
+    transition: all 0.3s;
+  }
+}
+
+// Clases para el toggle
+
+.effectVisible_y {
+  opacity: 1;
+  transform: translateY(0rem);
+  pointer-events: visible;
+}
+
+/* .box {
   width: 50rem;
   height: 5rem;
   background-color: yellow;
@@ -119,4 +204,4 @@ header {
     width: 5rem;
     height: 100%;
   }
-}
+} */

@@ -1,4 +1,4 @@
 import "./img/weather-forecast.png";
 import "./index.scss";
-
-console.log("Hola Typescript");
+import "./typescript/layout/header/searchingInput";
+import "./typescript/layout/header/menuClickVisible";

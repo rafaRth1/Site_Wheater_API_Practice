@@ -7,7 +7,7 @@
   "scripts": {
     "build": "webpack --mode production",
     "dev": "webpack --mode development",
-    "start": "webpack serve --mode development --open"
+    "start": "webpack serve --mode development"
   },
   "devDependencies": {
     "css-loader": "^6.5.1",
@@ -25,5 +25,7 @@
     "webpack-cli": "^4.9.1",
     "webpack-dev-server": "^4.4.0"
   },
-  "dependencies": {}
+  "dependencies": {
+    "axios": "^0.24.0"
+  }
 }
