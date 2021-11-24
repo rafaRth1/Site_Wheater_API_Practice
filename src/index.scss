@@ -2,12 +2,13 @@
 @import "./sass/utilities/variables";
 @import "./sass/utilities/functions";
 @import "./sass/utilities/mixins";
-
 @import "./sass/base/reset";
 @import "./sass/base/typo";
 @import "./sass/base/globlales";
 
+// Header
 @import "./sass/layout/header";
+@import "./sass/layout/siteLocation";
 
 body {
   background-color: rgb(32, 32, 56);
