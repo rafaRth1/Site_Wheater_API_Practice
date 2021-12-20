@@ -45,6 +45,7 @@ header {
     text-align: center;
     background-color: $AzulClaro;
     transition: 0.2s ease-in-out all;
+    color: white;
 
     &:focus {
       outline: solid $white 0.2rem;

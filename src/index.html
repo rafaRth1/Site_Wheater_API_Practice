@@ -1,95 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-      nomodule
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
-    ></script>
-    <link rel="icon" href="./img/weather-forecast.png" type="image/png" />
-    <title>Site Wheater API Practice</title>
-  </head>
-  <body>
-    <header>
-      <div class="site-header container">
-        <div class="logo">
-          <a href="#">
-            <img src="./img/weather-forecast.png" alt="Logo.png" />
-            <span>Site Wheater</span>
-          </a>
-        </div>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+		<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+		<link rel="icon" href="./img/weather-forecast.png" type="image/png" />
+		<title>Site Wheater API Practice</title>
+	</head>
+	<body>
+		<header>
+			<div class="site-header container">
+				<div class="logo">
+					<a href="#">
+						<img src="./img/weather-forecast.png" alt="Logo.png" />
+						<span>Site Wheater</span>
+					</a>
+				</div>
 
-        <div class="searching_city_postal">
-          <input
-            type="text"
-            role="textbox"
-            placeholder="Ingrese ciudad o código Postal"
-            class="searching"
-            value=""
-          />
-          <ion-icon name="search-outline" class="search-outline"></ion-icon>
-        </div>
+				<div class="searching_city_postal">
+					<input type="text" role="textbox" placeholder="Search City or Country" class="searching" value="" />
+					<ion-icon name="search-outline" class="search-outline"></ion-icon>
+				</div>
 
-        <div class="menu-activador">
-          <a href="#" class="hamburguesa">
-            <span class="menu-activador-linea"></span>
-            <span class="menu-activador-linea"></span>
-            <span class="menu-activador-linea"></span>
-          </a>
-        </div>
-      </div>
+				<div class="menu-activador">
+					<a href="#" class="hamburguesa">
+						<span class="menu-activador-linea"></span>
+						<span class="menu-activador-linea"></span>
+						<span class="menu-activador-linea"></span>
+					</a>
+				</div>
+			</div>
 
-      <div class="site-navigation-links">
-        <div class="group-navs container">
-          <nav>
-            <span>Pronostico</span>
-            <div class="items-button">
-              <button class="button-navigation">Hoy</button>
-              <button class="button-navigation">Por Hora</button>
-              <button class="button-navigation">Fin de Semana</button>
-              <button class="button-navigation">Mensual</button>
-            </div>
-          </nav>
-          <nav>
-            <span>Mapas</span>
-            <div class="items-button">
-              <button class="button-navigation">Mapas</button>
-            </div>
-          </nav>
-          <nav>
-            <span>Video</span>
-            <div class="items-button">
-              <button class="button-navigation">Historias Principales</button>
-            </div>
-          </nav>
-          <nav>
-            <span>Privacidad</span>
-            <div class="items-button">
-              <button class="button-navigation">
-                Configuracion de Privacidad
-              </button>
-              <button class="button-navigation">Derechos de los autos</button>
-              <button class="button-navigation">Política de Privacidad</button>
-            </div>
-          </nav>
-        </div>
-      </div>
-    </header>
+			<div class="site-navigation-links">
+				<div class="group-navs container">
+					<nav>
+						<span>Pronostico</span>
+						<div class="items-button">
+							<button class="button-navigation">Hoy</button>
+							<button class="button-navigation">Por Hora</button>
+							<button class="button-navigation">Fin de Semana</button>
+							<button class="button-navigation">Mensual</button>
+						</div>
+					</nav>
+					<nav>
+						<span>Mapas</span>
+						<div class="items-button">
+							<button class="button-navigation">Mapas</button>
+						</div>
+					</nav>
+					<nav>
+						<span>Video</span>
+						<div class="items-button">
+							<button class="button-navigation">Historias Principales</button>
+						</div>
+					</nav>
+					<nav>
+						<span>Privacidad</span>
+						<div class="items-button">
+							<button class="button-navigation">Configuracion de Privacidad</button>
+							<button class="button-navigation">Derechos de los autos</button>
+							<button class="button-navigation">Política de Privacidad</button>
+						</div>
+					</nav>
+				</div>
+			</div>
+		</header>
 
-    <section class="saved-locations">
-      <div class="all-location-card container"></div>
-    </section>
+		<section class="saved-locations">
+			<ion-icon name="chevron-back-outline" id="left"></ion-icon>
+			<div class="all-location-card container"></div>
+			<ion-icon name="chevron-forward-outline" id="rigth"></ion-icon>
+		</section>
 
-    <!--  <div class="box">
-      <div class="box_1"></div>
-      <div class="box_2"></div>
-      <div class="box_3"></div>
-    </div> -->
-  </body>
+		<main id="main-content">
+			<div class="region-main">
+				<div class="wheater-current"></div>
+			</div>
+			<aside>
+				<section class="card-promo">
+					<h2>Stay Safe</h2>
+				</section>
+			</aside>
+		</main>
+	</body>
 </html>
